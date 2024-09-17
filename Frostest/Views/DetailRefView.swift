@@ -20,7 +20,6 @@ struct DetailRefView: View {
                 HStack{
                     if listVM.refregirants[listVM.currentRefIndex].name == "R-410a" || listVM.refregirants[listVM.currentRefIndex].name == "R-404a" || listVM.refregirants[listVM.currentRefIndex].name == "R-407c"{
                         
-                        
                         VStack{
                             
                             Image(isDew ? "dew": "bubble")
@@ -29,7 +28,6 @@ struct DetailRefView: View {
                             
                             Toggle("", isOn: $isDew).offset(x: -45)
                                 
-            
                         }.padding(5)
                             .frame(width: screen.width * 0.37, height: screen.height * 0.3)
                             .background(GlassView(removeEffects: false).clipShape(.rect(cornerRadius: 25)))
@@ -44,7 +42,6 @@ struct DetailRefView: View {
                         ZStack{
                             Image (listVM.refregirants[listVM.currentRefIndex].image)
                             
-                            
                             Text(listVM.refregirants[listVM.currentRefIndex].name).foregroundStyle(
                                 
                                 listVM.refregirants[listVM.currentRefIndex].name == "R-12" || listVM.refregirants[listVM.currentRefIndex].name == "R-600a"  ? Color.black : Color.white
@@ -56,9 +53,6 @@ struct DetailRefView: View {
                         .background(GlassView(removeEffects: false).clipShape(.rect(cornerRadius: 25)))
                 }
             }.padding(8)
-            
-            
-             
             
             if !isDew{
                 HStack{
@@ -87,8 +81,7 @@ struct DetailRefView: View {
                 }
                 .padding()
             }
-            
-            
+    
             if !isDew{
                 
                 Slider(value: Binding(get: {Double(selectIndex)},

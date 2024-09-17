@@ -7,13 +7,12 @@ struct CustomPickerView: View {
     @State var isShowDetaiView = false
     let layout = [GridItem(.adaptive(minimum: screen.width / 1.5))]
     
-    
     var body: some View {
-       
+        
         VStack{
             
             ScrollView(.horizontal, showsIndicators: false){
-               
+                
                 HStack{
                     
                     ForEach(viewModel.refregirants){ item in
@@ -44,8 +43,9 @@ struct CustomPickerView: View {
             .fullScreenCover(isPresented: $isShowDetaiView, content: {
                 DetailRefView(listVM: viewModel)
             })
-             
+            
         }
+        
     }
 }
 

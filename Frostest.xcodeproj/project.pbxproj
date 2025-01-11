@@ -10,6 +10,7 @@
 		9A1FF48D2C919A7A009A57A9 /* CustomPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1FF48C2C919A7A009A57A9 /* CustomPickerView.swift */; };
 		9A24FC412C90E6E500621E7C /* Glass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24FC402C90E6E500621E7C /* Glass.swift */; };
 		9A24FC432C91148000621E7C /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A24FC422C91148000621E7C /* Animation.swift */; };
+		9A91232E2D32A0B200C64773 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91232D2D32A0B200C64773 /* LoadingView.swift */; };
 		9AB6EDE22C76796300BC01B3 /* FrostestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB6EDE12C76796300BC01B3 /* FrostestApp.swift */; };
 		9AB6EDE62C76796400BC01B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6EDE52C76796400BC01B3 /* Assets.xcassets */; };
 		9AB6EDE92C76796400BC01B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AB6EDE82C76796400BC01B3 /* Preview Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		9A1FF48C2C919A7A009A57A9 /* CustomPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPickerView.swift; sourceTree = "<group>"; };
 		9A24FC402C90E6E500621E7C /* Glass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Glass.swift; sourceTree = "<group>"; };
 		9A24FC422C91148000621E7C /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		9A91232D2D32A0B200C64773 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		9AB6EDDE2C76796300BC01B3 /* Frostest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Frostest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AB6EDE12C76796300BC01B3 /* FrostestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrostestApp.swift; sourceTree = "<group>"; };
 		9AB6EDE52C76796400BC01B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			children = (
 				9AB6EDF32C76805000BC01B3 /* DetailRefView.swift */,
 				9A1FF48C2C919A7A009A57A9 /* CustomPickerView.swift */,
+				9A91232D2D32A0B200C64773 /* LoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				9AB6EDF22C767B6200BC01B3 /* RefregirantListViewModel.swift in Sources */,
 				9AB6EDE22C76796300BC01B3 /* FrostestApp.swift in Sources */,
 				9A1FF48D2C919A7A009A57A9 /* CustomPickerView.swift in Sources */,
+				9A91232E2D32A0B200C64773 /* LoadingView.swift in Sources */,
 				9A24FC432C91148000621E7C /* Animation.swift in Sources */,
 				9AB6EDF42C76805000BC01B3 /* DetailRefView.swift in Sources */,
 			);
@@ -231,7 +235,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -331,12 +335,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mordor.Frostest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -363,12 +368,13 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Mordor.Frostest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
